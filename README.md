@@ -22,8 +22,9 @@ The QDEV-ESP32-C3 is a powerful and cost effective development/product ready pla
 - On board user LED (IO9).
 - High efficiency lithium battery buck/boost switching regulator yields >90% efficiency.
 - Battery reverse polarity protection.
-- Ressetable fuse.
-- Integrated battery charge circuit.
+- Resettable polyfuse.
+- Integrated battery charge circuit with charge state LED.
+- Power on/off switch.
 
 ## SPECIFICATIONS
 ### MECHANICAL
@@ -34,9 +35,14 @@ The QDEV-ESP32-C3 is a powerful and cost effective development/product ready pla
 The board can accept either 5 volts or 3.3 volts. 5 volts is normally supplied via the USB-A connector but can also be input on the +5V breakout pin.
 5 volt power is regulated down to 3.3 volts using a compact linear regulator. 3.3 volts can also be input on the 3.3V breakout pin.
 
-**NOTE:** The board is not 5V tolerant. Board power on the 3.3V breakout pin or any I/O pin should not exceed 3.3V.
+**NOTE:** The board is not 5V tolerant. Voltage applied to the 3.3V breakout pin or any I/O pin should not exceed 3.3V.
 
-Typical operating current can range from microamps in deep sleep mode to approximately 160 milliamps when transmitting WiFi data. 
+#### *BATTERY*
+The board can be powered by an external Lithium Ion 3.7V battery. The embedded buck/boost switching regulator maintains a stable 3.3V system voltage from a battery voltage down to 2.5V.
+A typical battery used for this application is the 403040 RC rectangular cell which can provide up to 500 MAH. The phisical dimensions are 4x30x40 mm.
+The battery is charged by plugging the USB-A connector into any PC, phone charger, or power bank. The on-board RED LED with light while charging and turn off when the charging cycle is complete.
+
+Operating current can range from microamps in deep sleep mode to approximately 160 milliamps when transmitting WiFi data. Typicl standby current is approximately 50 milliamps.
 
 #### *BREAKOUT PIN DESCRIPTION*
 Signal designators on the bottom of the PCB rotating clockwise:
