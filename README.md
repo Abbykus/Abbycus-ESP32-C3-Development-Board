@@ -1,33 +1,34 @@
 # QDEV-ESP32-C3
-Abbykus ESP32-C3 development board based on the Espressif ESP32-C3-WROOM-02 module.
+Abbykus ESP32-C3 development board based on the [Espressif ESP32-C3-WROOM-02 module](https://www.espressif.com/en/news/ESP32_C3).
 ![12_cropped](https://user-images.githubusercontent.com/99380815/155932995-488e5d05-02c9-49e0-9e3b-c7f0c39fafaf.png)
 ![13_cropped](https://user-images.githubusercontent.com/99380815/155933031-5ce7c1e2-4d4d-4d99-a0f2-f20bfb035a50.png)
 
 ## DESCRIPTION
-The QDEV-ESP32-C3 board is a multipurpose Internet Of Things (IOT) module based on the Espressif ESP32-C3-WROOM-02 module. 
+The QDEV-ESP32-C3 board is a multipurpose Internet Of Things (IOT) module based on the Espressif ESP32-C3-WROOM-02 MCU. 
 The QDEV-ESP32-C3 is a powerful and cost effective development/product ready platform with a 'dongle' style form factor which incorporates a male USB-A connector allowing direct plugin to a PC/laptop/Raspberry Pi/phone charger/power bank, etc.
-The board also has full support for en external 3.7V Lithium Ion battery using a high efficiency buck/boost regulator and charging circuitry.
-The external battery can be discharged down to 2.5V.
+
+The board also has full support for a 3.7V Lithium Ion battery using a high efficiency buck/boost regulator and charging circuitry via the USB-A connector.
 
 ## FEATURES
 - Espressif 32 bit RISC-V single core low power MCU.
 - 80 / 160 Mhz CPU clock speed.
 - 384 KBytes of SRAM.
 - 4 MBytes of flash memory.
-- WiFi module supports IEEE802.11 b/g/n protocol w/embedded TCPIP stack.
-- Bluetooth LE: Bluetooth 5.0, Bluetooth MESH.
-- Intergated Inverted F PCB antenna.
+- WiFi module supports IEEE802.11 b/g/n protocol w/embedded TCPIP stack. Also supports adhoc networks based on ESP-NOW protocol.
+- Bluetooth LE: Bluetooth 5.0, Bluetooth MESH, Bluetooth long range.
+- Integrated Inverted F PCB antenna.
 - 6 channels of 12-bit Analog to Digital converter (ADC).
 - 13 GPIO's available with PWM and low power wakeup capability.
 - UART supporting baud rates up to 5 Mbaud.
 - Auto-programming circuit (eliminates the 'boot' button).
 - On board user LED (IO9).
-- High efficiency lithium battery buck/boost switching regulator yields >90% efficiency.
+- High efficiency lithium battery buck/boost switching regulator yields >90% efficiency from 4.2V down to 2.7V.
 - Battery reverse polarity protection.
-- Resettable polyfuse.
+- Auto-Resettable polyfuse.
 - Integrated battery charge circuit with charge state LED.
-- Typical charge current of 250 milliamps (set by an onboard resistor).
+- Default charge current of 250 milliamps can be modified via an onboard resistor.
 - Power on/off switch.
+- Reset button.
 
 ## SPECIFICATIONS
 ### MECHANICAL
