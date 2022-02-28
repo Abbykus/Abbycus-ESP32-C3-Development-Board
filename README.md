@@ -50,7 +50,20 @@ Operating current can range from microamps in deep sleep mode to approximately 1
 
 #### *BREAKOUT PIN DESCRIPTION*
 Signal designators on the bottom of the PCB rotating clockwise:
-- **RST** Chip reset - active low.
+- **3.3V** Output of 3.3V regulator or 3.3V input if not powered from 5V (USB-A or breakout).
+- **NRST** MCU reset - active low.
+- **IO4** GPIO4.
+- **IO5** GPIO5 / IR_R.
+- **IO6** GPIO6 / FSPICLK / MTCK.
+- **IO7** GPIO7 / FSPID / MTDO.
+- **IO8** GPIO8.
+- **IO9** GPIO9.
+- **GND** Board ground connect.
+- **RXD0** UART0_RXD / GPIO3.
+- **TXD0** UART0_TXD / GPIO1. ** STRAPPING PIN **
+- **IO18** GPIO18 / USB_D-.
+- **IO19** GPIO19 / USB_D+.
+- 
 - **ADC** 10 bit analog to digital converter (ADC).
 - **EN** Chip enable - active high.
 - **IO16** GPIO 16 / Wake from deep sleep.
@@ -66,14 +79,14 @@ Signal designators on the bottom of the PCB rotating clockwise:
 - **IO10** Not user available.
 - **MOSI** Not user available.
 - **SCLK** Not user available.
-- **GND** Board ground connect.
+
 - **IO15** GPIO15 / MTDO / HSPICS / UART0_RTS. ** STRAPPING PIN **
 - **IO2** GPIO2 / UART1_TXD. ** STRAPPING PIN **
 - **IO0** GPIO0 / HSPI_MISO / I2S_DATA. ** STRAPPING PIN **
-- **IO4** GPIO4.
-- **IO5** GPIO5 / IR_R.
-- **RXD** UART0_RXD / GPIO3.
-- **TXD** UART0_TXD / GPIO1. ** STRAPPING PIN **
+
+
+
+
 
 #### *NOT USER AVAILABLE PINS*
 Several pins labeled "Not user available" are used internally by the ESP-12F module. These signals are provided on the breakout pins but should not be connected externally.
