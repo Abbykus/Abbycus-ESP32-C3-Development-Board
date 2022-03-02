@@ -38,16 +38,15 @@ The board also has full support for a 3.7V Lithium Ion battery using a high effi
 
 ### ELECTRICAL
 #### *POWER*
-The board is normally powered by 5 volts via the USB-A connector but can also be input on the +5V breakout pin. The 5 volt input is regulated down to 3.3 volts using a high efficency switching regulator. 
+The board is normally powered by 5 volts via the USB-A connector. The 5 volt input is regulated down to 3.3 volts using a high efficency switching regulator. 
 
 The 3.3 volt breakout pin can power external circuits with a maximum current of 600 milliamps. 
 
 **WARNING:** The ESP32-C3 is not 5V tolerant. Voltage applied to any I/O pin should not exceed 3.3V.
 
 #### *BATTERY*
-The board can be powered by an external Lithium Ion 3.7V battery connected to the **BAT** terminals. An embedded buck/boost switching regulator maintains a stable 3.3V system voltage from a battery voltage down to approximately 2.5V.
-A typical battery used for this application is the 403040 RC rectangular cell which can provide up to 500 MAH. 
-The battery is charged by plugging the USB-A connector into any PC, phone charger, or power bank. The on-board RED LED will light while charging and turn off when charging is complete.
+The board can be powered by an external 3.7V Lithium Ion battery connected to the **BAT** terminals. An embedded buck/boost switching regulator maintains a stable 3.3V system voltage from a battery voltage of 4.2V (full charge) down to approximately 2.5V (discharged). 
+The battery is charged when 5 volts is applied via the USB-A connector. The on-board RED LED will light while charging and turn off when charging is complete.
 
 Default charge current is set at 250 milliamps. This can be changed by replacing resistor R11 on the PCB. See the AAP2154 datasheet in the **DOCS** folder for information regarding setting the charge current.
 
