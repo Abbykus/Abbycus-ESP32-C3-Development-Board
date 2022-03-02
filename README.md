@@ -54,22 +54,23 @@ Default charge current is set at 250 milliamps. This can be changed by replacing
 Operating current can range from microamps in deep sleep mode to approximately 160 milliamps when transmitting WiFi data. Typical idle current is approximately 50 milliamps.
 
 #### *BREAKOUT PIN DESCRIPTION*
-- **3.3V** Output of 3.3V regulator or 3.3V input if not powered from 5V (USB-A or breakout).
+- **3.3V** Output of the 3.3V switching regulator.
 - **NRST** MCU reset - active low.
 - **IO4** GPIO4 / ADC1_CH4 / FSPIHD / MTMS.
 - **IO5** GPIO5 / ADC2_CH0 / FSPIWP / MTDI.
 - **IO6** GPIO6 / FSPICLK / MTCK.
 - **IO7** GPIO7 / FSPID / MTDO.
-- **IO8** GPIO8. ** STRAPPING PIN **
-- **IO9** GPIO9. ** STRAPPING PIN **
+- **IO8** GPIO8. **STRAPPING PIN**
+- **IO9** GPIO9. **STRAPPING PIN**
 - **GND** Board ground connect.
+
 
 - **RXD0** UART0_RXD / GPIO20.
 - **TXD0** UART0_TXD / GPIO21. 
 - **IO18** GPIO18 / USB_D-.
 - **IO19** GPIO19 / USB_D+.
 - **IO3** GPIO3 / ADC1_CH3.
-- **IO2** GPIO2 / ADC1_CH2 / FSPIQ. ** STRAPPING PIN **
+- **IO2** GPIO2 / ADC1_CH2 / FSPIQ. **STRAPPING PIN**
 - **IO1** GPIO1 / ADC1_CH1 / XTAL_32K_N.
 - **IO0** GPIO0 / ADC1_CH0 / XTAL_32K_P.
 - **GND** Board ground connect.
