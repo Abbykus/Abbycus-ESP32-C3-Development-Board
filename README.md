@@ -53,7 +53,6 @@ Default charge current is set at 250 milliamps. This can be changed by replacing
 Operating current can range from microamps in deep sleep mode to approximately 160 milliamps when transmitting WiFi data. Typical idle current is approximately 50 milliamps.
 
 #### *BREAKOUT PIN DESCRIPTION*
-Signal designators on the bottom of the PCB viewed clockwise:
 - **3.3V** Output of 3.3V regulator or 3.3V input if not powered from 5V (USB-A or breakout).
 - **NRST** MCU reset - active low.
 - **IO4** GPIO4 / ADC1_CH4 / FSPIHD / MTMS.
