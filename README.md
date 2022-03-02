@@ -6,7 +6,7 @@ Abbykus ESP32-C3 development board based on the [Espressif ESP32-C3-WROOM-02 mod
 
 ## DESCRIPTION
 The QDEV-ESP32-C3 board is a multipurpose Internet Of Things (IOT) module based on the Espressif ESP32-C3-WROOM-02 MCU. 
-The QDEV-ESP32-C3 is a powerful and cost effective development/product ready platform with a 'dongle' style form factor which incorporates a male USB-A connector allowing direct plugin to a PC/laptop/Raspberry Pi/phone charger/power bank, etc.
+The QDEV-ESP32-C3 is a powerful and cost effective development/product ready platform with a 'dongle' style form factor which incorporates a male USB-A connector allowing direct plugin to a PC / laptop / Raspberry Pi / phone charger / power bank, etc.
 
 The board also has full support for a 3.7V Lithium Ion battery using a high efficiency buck/boost regulator and charging circuitry. See below for more battery information.
 
@@ -38,14 +38,14 @@ The board also has full support for a 3.7V Lithium Ion battery using a high effi
 
 ### ELECTRICAL
 #### *POWER*
-The board is normally powered by 5 volts via the USB-A connector. The 5 volt input is regulated down to 3.3 volts using a high efficency switching regulator. 
+The board is normally powered by 5 volts via the USB-A connector. The 5 volt input is regulated down to 3.3 volts using a high efficency buck/boost switching regulator. 
 
 The 3.3 volt breakout pin can power external circuits with a maximum current of 600 milliamps. 
 
 **WARNING:** The ESP32-C3 is not 5V tolerant. Voltage applied to any I/O pin should not exceed 3.3V.
 
 #### *BATTERY*
-The board can be powered by an external 3.7V Lithium Ion battery connected to the **BAT** terminals. An embedded buck/boost switching regulator maintains a stable 3.3V system voltage from a battery voltage of 4.2V (full charge) down to approximately 2.5V (discharged). 
+The board can be powered by an external 3.7V Lithium Ion battery connected to the **BAT** terminals. The embedded buck/boost switching regulator maintains a stable 3.3V system voltage from a battery voltage of 4.2V (full charge) down to approximately 2.5V (discharged). 
 The battery is charged when 5 volts is applied via the USB-A connector. The on-board RED LED will light while charging and turn off when charging is complete.
 
 Default charge current is set at 250 milliamps. This can be changed by replacing resistor R11 on the PCB. See the AAP2154 datasheet in the **DOCS** folder for information regarding setting the charge current.
@@ -80,7 +80,7 @@ Three GPIO pins are used by the ESP32-C3 to control boot mode. The pin level dur
 - **IO8** UART download mode: floating or pullup. Normal boot from flash: don't care.
 - **IO9** UART download mode: pulldown. Normal boot from flash: floating or pullup.
 
-## USAGE
+## PROGRAMMING
 The QDEV-ESP32-C3 is programmed through the USB-A connector. 
 
 ## APPLICATION EXAMPLES
