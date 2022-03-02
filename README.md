@@ -1,5 +1,6 @@
 # QDEV-ESP32-C3
 Abbykus ESP32-C3 development board based on the [Espressif ESP32-C3-WROOM-02 module](https://www.espressif.com/en/news/ESP32_C3).
+
 ![12_cropped](https://user-images.githubusercontent.com/99380815/155932995-488e5d05-02c9-49e0-9e3b-c7f0c39fafaf.png)
 ![13_cropped](https://user-images.githubusercontent.com/99380815/155933031-5ce7c1e2-4d4d-4d99-a0f2-f20bfb035a50.png)
 
@@ -47,7 +48,7 @@ The board can be powered by an external Lithium Ion 3.7V battery connected to th
 A typical battery used for this application is the 403040 RC rectangular cell which can provide up to 500 MAH. The phisical dimensions are 4x30x40 mm.
 The battery is charged by plugging the USB-A connector into any PC, phone charger, or power bank. The on-board RED LED will light while charging and turn off when charging is complete.
 
-Default charge current is set at 250 milliamps. This can be changed by 
+Default charge current is set at 250 milliamps. This can be changed by replacing resistor R11 on the PCB. See the AAP2154 datasheet in the **DOCS** folder for information regarding setting the charge current.
 
 Operating current can range from microamps in deep sleep mode to approximately 160 milliamps when transmitting WiFi data. Typical idle current is approximately 50 milliamps.
 
@@ -93,10 +94,5 @@ The code examples included here were written using the Arduino framework on [Pla
 While the Arduino IDE is relatively simple, the advanced features of PlatformIO make it much more compelling and useful to developers. 
 
 The Espressif ESP-IDF offers more detailed control of certain features but lacks the rich library support of either the Arduino IDE or PlatformIO and is specific to Espressif devices.
-
-
-
-
-
 
 
