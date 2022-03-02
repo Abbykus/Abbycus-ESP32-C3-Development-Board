@@ -15,15 +15,16 @@ The board also has full support for a 3.7V Lithium Ion battery using a high effi
 - 80 / 160 Mhz CPU clock speed.
 - 384 KBytes of SRAM.
 - 4 MBytes of flash memory.
-- WiFi module supports IEEE802.11 b/g/n protocol w/embedded TCPIP stack. Also supports adhoc and MESH networks based on ESP-NOW protocol.
+- WiFi module supports IEEE802.11 b/g/n protocol w/embedded TCPIP stack. 
+- WiFi supports adhoc and MESH networks based on ESP-NOW protocol.
 - Bluetooth LE: Bluetooth 5.0, Bluetooth MESH, Bluetooth long range.
 - Integrated Inverted F PCB antenna.
 - 6 channels of 12-bit Analog to Digital converter (ADC).
 - 13 GPIO's available with PWM and low power wakeup capability.
 - UART supporting baud rates up to 5 Mbaud.
-- Auto-programming circuit (eliminates the 'boot' button).
+- Auto-programming circuit (eliminates the need for a 'boot' button).
 - On-board user LED (IO9).
-- High efficiency lithium battery buck/boost switching regulator yields >90% efficiency from 4.2V down to 2.5V.
+- High efficiency buck/boost switching regulator yields >90% efficiency for maximum battery life.
 - Battery reverse polarity protection.
 - Auto-Resettable polyfuse.
 - Integrated battery charge circuit with charge state LED.
@@ -37,15 +38,15 @@ The board also has full support for a 3.7V Lithium Ion battery using a high effi
 
 ### ELECTRICAL
 #### *POWER*
-The board can accept either 5 volts via the USB-A connector but can also be input on the +5V breakout pin. The 5 volt input is regulated down to 3.3 volts using a compact linear regulator. 
+The board is normally powered by 5 volts via the USB-A connector but can also be input on the +5V breakout pin. The 5 volt input is regulated down to 3.3 volts using a high efficency switching regulator. 
 
-The 3.3 volt breakout pin can power external circuits with a maximum current of 200 milliamps. The 3.3V breakout pin can also accept an external 3.3V power supply if the board is not powered by 5 volts.
+The 3.3 volt breakout pin can power external circuits with a maximum current of 600 milliamps. 
 
-**WARNING:** The ESP32-C3 is not 5V tolerant. Voltage applied to the 3.3V breakout pin or any I/O pin should not exceed 3.3V.
+**WARNING:** The ESP32-C3 is not 5V tolerant. Voltage applied to any I/O pin should not exceed 3.3V.
 
 #### *BATTERY*
-The board can be powered by an external Lithium Ion 3.7V battery connected to the BAT terminals. An embedded buck/boost switching regulator maintains a stable 3.3V system voltage from a battery voltage down to approximately 2.5V.
-A typical battery used for this application is the 403040 RC rectangular cell which can provide up to 500 MAH. The phisical dimensions are 4x30x40 mm.
+The board can be powered by an external Lithium Ion 3.7V battery connected to the **BAT** terminals. An embedded buck/boost switching regulator maintains a stable 3.3V system voltage from a battery voltage down to approximately 2.5V.
+A typical battery used for this application is the 403040 RC rectangular cell which can provide up to 500 MAH. 
 The battery is charged by plugging the USB-A connector into any PC, phone charger, or power bank. The on-board RED LED will light while charging and turn off when charging is complete.
 
 Default charge current is set at 250 milliamps. This can be changed by replacing resistor R11 on the PCB. See the AAP2154 datasheet in the **DOCS** folder for information regarding setting the charge current.
