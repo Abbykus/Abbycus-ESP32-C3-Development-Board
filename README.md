@@ -5,7 +5,7 @@ Abbykus ESP32-C3 development board based on the [Espressif ESP32-C3-WROOM-02 mod
 
 ## DESCRIPTION
 The QDEV-ESP32-C3 board is a multipurpose Internet Of Things (IOT) module based on the Espressif ESP32-C3-WROOM-02 MCU. 
-The QDEV-ESP32-C3 is a powerful and cost effective development/product ready platform with a 'dongle' style form factor which incorporates a male USB-A connector allowing direct plugin to a PC / laptop / Raspberry Pi / phone charger / power bank, etc.
+The QDEV-ESP32-C3 is a powerful and cost effective development/product ready platform with a *'dongle'* style form factor which incorporates a male USB-A connector allowing direct plugin to a PC / laptop / Raspberry Pi / phone charger / power bank, etc.
 
 The board also has full support for a 3.7V Lithium Ion battery using a high efficiency buck/boost regulator and charging circuitry. See below for more battery information.
 
