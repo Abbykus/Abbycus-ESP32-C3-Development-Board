@@ -34,7 +34,7 @@ The board also has full support for a 3.7V Lithium Ion battery using a high effi
 
 ## SPECIFICATIONS
 ### MECHANICAL
-![PCB_QDEV_ESP8266_DIM_V1 2](https://user-images.githubusercontent.com/99380815/154401655-a657988f-43b5-4292-a79f-05efef374700.png)
+![PCB_QDEV-ESP32-C3_DIM](https://user-images.githubusercontent.com/99380815/156488650-f1e69672-e313-4ea4-ba35-83738ac78b66.png)
 
 ### ELECTRICAL
 #### *POWER*
