@@ -1,8 +1,7 @@
 # QDEV-ESP32-C3
 Abbykus ESP32-C3 development board based on the [Espressif ESP32-C3-WROOM-02 module](https://www.espressif.com/en/news/ESP32_C3).
 
-![12_cropped](https://user-images.githubusercontent.com/99380815/155932995-488e5d05-02c9-49e0-9e3b-c7f0c39fafaf.png)
-![13_cropped](https://user-images.githubusercontent.com/99380815/155933031-5ce7c1e2-4d4d-4d99-a0f2-f20bfb035a50.png)
+
 
 ## DESCRIPTION
 The QDEV-ESP32-C3 board is a multipurpose Internet Of Things (IOT) module based on the Espressif ESP32-C3-WROOM-02 MCU. 
@@ -33,9 +32,8 @@ The board also has full support for a 3.7V Lithium Ion battery using a high effi
 - Reset button.
 
 ## SPECIFICATIONS
-
 ### MECHANICAL
-![PCB_QDEV-ESP32-C3_DIM](https://user-images.githubusercontent.com/99380815/156488899-8021f6f2-4e7e-4230-adcf-e6a468825148.png)
+![PCB_QDEV-ESP32-C3_DIM](https://user-images.githubusercontent.com/99380815/156489479-e63da90b-ce5c-4248-97cb-f0c032cb4949.png)
 
 ### ELECTRICAL
 #### *POWER*
