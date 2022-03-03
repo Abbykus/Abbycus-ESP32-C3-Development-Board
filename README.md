@@ -33,8 +33,9 @@ The board also has full support for a 3.7V Lithium Ion battery using a high effi
 - Reset button.
 
 ## SPECIFICATIONS
+
 ### MECHANICAL
-![PCB_QDEV-ESP32-C3_DIM](https://user-images.githubusercontent.com/99380815/156488650-f1e69672-e313-4ea4-ba35-83738ac78b66.png)
+![PCB_QDEV-ESP32-C3_DIM](https://user-images.githubusercontent.com/99380815/156488899-8021f6f2-4e7e-4230-adcf-e6a468825148.png)
 
 ### ELECTRICAL
 #### *POWER*
@@ -63,7 +64,7 @@ Operating current can range from microamps in deep sleep mode to approximately 1
 - **IO9** GPIO9. **STRAPPING PIN**
 - **GND** Board ground connect.
 
-
+- **IO10** GPIO / FSPICS0.
 - **RXD0** UART0_RXD / GPIO20.
 - **TXD0** UART0_TXD / GPIO21. 
 - **IO18** GPIO18 / USB_D-.
@@ -72,7 +73,7 @@ Operating current can range from microamps in deep sleep mode to approximately 1
 - **IO2** GPIO2 / ADC1_CH2 / FSPIQ. **STRAPPING PIN**
 - **IO1** GPIO1 / ADC1_CH1 / XTAL_32K_N.
 - **IO0** GPIO0 / ADC1_CH0 / XTAL_32K_P.
-- **GND** Board ground connect.
+
 
 #### *STRAPPING PINS*
 Three GPIO pins are used by the ESP32-C3 to control boot mode. The pin level during boot is as follows:
