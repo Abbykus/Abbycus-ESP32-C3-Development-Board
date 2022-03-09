@@ -27,9 +27,9 @@ A very simple script to blink the on-board LED can be run as follows:
 - Open a terminal on the host PC and navigate to the above folder.
 - Type one of the following (depending on your OS):
 
-ampy --port /dev/ttyUSB0 run blink.py   *Linux or MacOS*
+ampy --port /dev/ttyUSB0 run blink.py   *(Linux or MacOS)*
 
-ampy --port COM5 run blink.py   *Windows*
+ampy --port COM5 run blink.py   *(Windows)*
 
 Now you should see the ESP-12F LED blink once per second for 30 seconds.
 
