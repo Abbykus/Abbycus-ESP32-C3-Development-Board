@@ -1,9 +1,9 @@
 import machine
 import time
-pin = machine.Pin(2, machine.Pin.OUT) # GPIO 2 is the ESP-12F LED
+led = machine.Pin(9, machine.Pin.OUT) # LED on the QDEV-ESP32-C3 is GPIO 9
 for i in range(30):
-   pin.off()
+   led.off()
    time.sleep(0.5)
-   pin.on()
+   led.on()
    time.sleep(0.5)
  
