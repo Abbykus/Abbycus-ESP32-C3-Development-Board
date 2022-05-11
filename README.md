@@ -92,4 +92,6 @@ While the Arduino IDE is relatively simple, the advanced features of PlatformIO 
 
 The Espressif ESP-IDF offers more detailed control of certain features but lacks the rich library support of either the Arduino IDE or PlatformIO and is specific to Espressif devices.
 
+The QDEV-ESP32-C3 board also supports microPython. 
+
 
