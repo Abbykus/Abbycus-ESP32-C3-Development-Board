@@ -37,7 +37,7 @@ The board also has full support for a 3.7V Lithium Ion battery using a high effi
 #### *POWER*
 The board is normally powered by 5 volts via the USB-A connector. The 5 volt input is regulated down to 3.3 volts using a high efficency buck/boost switching regulator. 
 
-The 3.3 volt breakout pin can power external circuits with a maximum current of 600 milliamps. 
+The 3.3 volt breakout pin can supply power to external circuits with a maximum current of 600 milliamps. 
 
 **WARNING:** The ESP32-C3 is not 5V tolerant. Voltage applied to any I/O pin should not exceed 3.3V.
 
@@ -45,9 +45,9 @@ The 3.3 volt breakout pin can power external circuits with a maximum current of 
 The board can be powered by an external 3.7V Lithium Ion battery connected to the **BAT** terminals. The embedded buck/boost switching regulator maintains a stable 3.3V system voltage from a battery voltage of 4.2V (full charge) down to approximately 2.5V (discharged). 
 The battery is charged when 5 volts is applied via the USB-A connector. The on-board RED LED will light while charging and turn off when charging is complete.
 
-Default charge current is set at 250 milliamps. This can be changed by replacing resistor R11 on the PCB. See the AAP2154 datasheet in the **DOCS** folder for information regarding setting the charge current.
+Default charge current is set at 250 milliamps. This can be changed by replacing resistor R11 on the PCB. See the AAP2154 (LTC4054 equivalent) datasheet in the **DOCS** folder for information regarding setting the charge current.
 
-Operating current can range from microamps in deep sleep mode to approximately 160 milliamps when transmitting WiFi data. Typical idle current is approximately 50 milliamps.
+Operating current can range from microamps in deep sleep mode to peaks of approximately 160 milliamps when transmitting WiFi data. Typical idle current is approximately 50 milliamps.
 
 #### *BREAKOUT PIN DESCRIPTION*
 - **3.3V** Output of the 3.3V switching regulator.
