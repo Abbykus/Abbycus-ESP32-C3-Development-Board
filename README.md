@@ -1,5 +1,5 @@
 # QDEV-ESP32-C3
-The Abbykus QDEV-ESP32-C3 development board is an Internet Of Things (IOT) development module based on the [Espressif ESP32-C3-WROOM-02 module](https://www.espressif.com/en/news/ESP32_C3).
+The Abbycus QDEV-ESP32-C3 development board is an Internet Of Things (IOT) development module based on the [Espressif ESP32-C3-WROOM-02 module](https://www.espressif.com/en/news/ESP32_C3).
 
 ## DESCRIPTION
 The QDEV-ESP32-C3 is a powerful and cost effective development/product ready platform with a *'dongle'* style form factor which incorporates a male USB-A connector allowing the board to be powered and programmed via a standard USB-Serial port.
