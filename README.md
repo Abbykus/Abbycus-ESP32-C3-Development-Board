@@ -7,6 +7,8 @@ Additionally the user application can use the Serial port to communicate with a 
 
 The board also has full support for a 3.7V Lithium Ion battery using a high efficiency buck/boost regulator and charging circuitry. See below for more battery information.
 
+For **project examples** see [here](https://github.com/Abbykus/Abbycus-ESP8266-Development-Board/tree/main/Examples). These examples are written for the ESP8266 but should work with other Espressif variants. **Note** that the 'ESP8266WiFi.h' library will need to be changed to 'WiFi.h'.
+
 ## FEATURES
 - Espressif ESP32-C3 32 bit RISC-V single core low power MCU.
 - 80 / 160 Mhz CPU clock speed.
